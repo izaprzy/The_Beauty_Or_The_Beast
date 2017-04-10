@@ -160,6 +160,7 @@ $(function () {
 
             if (chosenFilter === 'choose' || chosenFilter === 'function') { // prevents showing filter button, before choosing filter
                 filterButton.addClass('hidden');
+                insertDataIntoTable(data);
             }
             $('#function').on('change',function () { // prevents showing filter button, before choosing  employee function
                 if ($(this).val() === "choose") {
