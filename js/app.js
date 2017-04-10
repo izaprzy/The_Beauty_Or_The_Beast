@@ -164,8 +164,10 @@ $(function () {
             $('#function').on('change',function () { // prevents showing filter button, before choosing  employee function
                 if ($(this).val() === "choose") {
                     filterButton.addClass('hidden');
+                    insertDataIntoTable(data);
                 } else {
                     filterButton.removeClass('hidden');
+                    insertDataIntoTable(data);
                 }
             });
             filteringInputs.each(function (index, value) {
