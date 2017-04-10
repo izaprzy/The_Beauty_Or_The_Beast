@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Beauty and the Beast</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <img src="logo.png" alt="logo">
+    <section>
+        <input type="button" id="getJSON" value="Get Employees">
+        <form id="formToFilterEmployees" class="hidden">
+            <div class="filter-by">
+                <label>Filter by:</label>
+                <select id="filter-by" name="filter"></select>
+            </div>
+            <div class="filtering-input id hidden">
+                <input type="text" id="id"  name="id" placeholder="id">
+            </div>
+            <div class="filtering-input firstName hidden">
+                <input type="text" id="name" name="name" placeholder="first name">
+            </div>
+            <div class="filtering-input lastName hidden">
+                <input type="text" id="surname" name="surname" placeholder="last name">
+            </div>
+            <div class="filtering-input dateOfBirth hidden">
+                <label>Date of birth</label>
+                <input type="text" id="from" name="from" placeholder="from">
+                <input type="text" id="to" name="to" placeholder="to">
+            </div>
+            <div class="filtering-input function hidden">
+                <select id="function" name="function"></select>
+            </div>
+            <div class="filtering-input experience hidden">
+                <input type="text" id="experience" name="experience" placeholder="experience">
+            </div>
+            <input type="submit" value="FILTER" id="filter-button" class="hidden">
+
+        </form>
+    </section>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

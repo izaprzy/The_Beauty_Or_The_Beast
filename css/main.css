@@ -1,0 +1,130 @@
+body {
+    background-color: #252122;
+    color: #aeaeae;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    width: 20vw;
+    height: auto;
+    display: block;
+}
+
+#getJSON {
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #cf0d10;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#getJSON:hover {
+    background-color: transparent;
+    border: 1px solid #cf0d10;
+}
+
+section {
+    text-align: center;
+}
+
+.filter, select, input{
+    outline: none;
+    border-style: none;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: #e5e5e5;
+}
+
+.filtering-input {
+    border-radius: 3px;
+    padding: 15px;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+
+#filter-button {
+    padding: 4px 40px;
+    background-color: rgba(208, 13, 16, 0.76);
+    color: white;
+    opacity: 0.8;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+#filter, .filter-by {
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+table {
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid #404040;
+    border-radius: 4px;
+}
+tr, th, td {
+    border: 1px solid #404040;
+    padding: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+tbody>tr:hover {
+    background-color: rgba(229, 229, 229, 0.39);
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+table th {
+    padding: 10px;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid gray;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid gray;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.page-number {
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.active {
+    background-color: #337ab7;
+    color: white;
+}
