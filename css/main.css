@@ -33,6 +33,7 @@ img {
 
 section {
     text-align: center;
+    margin-top: 18vh;
 }
 
 .filter, select, input{
